@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.bg {
+    background-color: bisque;
+}
+
+.header {
+    justify-content: center;
+    text-align: center;
+    color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid tan;
+    background-color: beige;
+}
+
+.header:hover {
+    color: black;
+}
+
+.navicon {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.navicon a {
+    color: grey;
+    margin: 4px;
+    padding: 4px;
+}
+
+a:hover {
+    color: black;
+}
+
+.texts {
+    text-align: center;
+    margin: 25vh;
+}
+
+@media all and (max-width:800px) {
+    .navicon {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width:600px) {
+    .navicon {
+        flex-direction: column !important;
+        justify-content: center !important;
+        border-width: 0.5px !important;
+        border-color: grey !important;
+        width: 100% !important;
+        align-items: center !important;
+        background-color: goldenrod !important;
+        border: solid tan;
+    }
+    .navitem {
+        border-top-width: 1px !important;
+        border-bottom-width: 1px !important;
+        border-color: grey !important;
+        width: 100% !important;
+        text-align: center !important;
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+        border: solid tan;
+    }
+    .links {
+        width: 100%;
+    }
+    .fi {
+        border-top: none !important;
+    }
+    .texts {
+        text-align: center;
+        width: 30vh;
+        margin-left: justify-content: center;
+        margin: 25%
+    }
+}
+
+.media {
+    display: flex;
+    align-items: flex-start;
+    background-color: antiquewhite;
+    padding: 16px;
+    max-width: 500px;
+    margin: 20px;
+    border-radius: 3px;
+}
+
+.pp {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.media-heading {
+    margin: 0 0 8px;
+}
+
+.right {
+    order: 1;
+}
